@@ -1,0 +1,5 @@
+project          =
+credentials_file =
+ssh_username     =
+ssh_pub_key      =
+instance_count   =
