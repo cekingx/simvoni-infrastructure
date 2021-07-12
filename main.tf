@@ -26,6 +26,10 @@ resource "google_compute_firewall" "firewall-ingress" {
   allow {
     protocol = "tcp"
   }
+
+  allow {
+    protocol = "icmp"
+  }
 }
 
 resource "google_compute_firewall" "firewall-egress" {
@@ -35,6 +39,10 @@ resource "google_compute_firewall" "firewall-egress" {
 
   allow {
     protocol = "tcp"
+  }
+
+  allow {
+    protocol = "icmp"
   }
 }
 
