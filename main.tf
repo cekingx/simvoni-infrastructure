@@ -30,6 +30,10 @@ resource "google_compute_firewall" "firewall-ingress" {
   allow {
     protocol = "icmp"
   }
+
+  allow {
+    protocol = "udp"
+  }
 }
 
 resource "google_compute_firewall" "firewall-egress" {
@@ -43,6 +47,10 @@ resource "google_compute_firewall" "firewall-egress" {
 
   allow {
     protocol = "icmp"
+  }
+
+  allow {
+    protocol = "udp"
   }
 }
 
